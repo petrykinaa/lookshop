@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'Lato-Regular', sans-serif;
+  src: local('Lato-Regular'),
+       url('../fonts/Lato-Regular.woff2') format('woff2'),
+       url('../fonts/Lato-Regular.woff') format('woff');
+       font-weight: 400;
+       font-style: normal;
+       font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato-Italic', sans-serif;
+  src: local('Lato-Italic'),
+       url('../fonts/Lato-Italic.woff2') format('woff2'),
+       url('../fonts/Lato-Italic.woff') format('woff');
+       font-weight: 400;
+       font-style: italic;
+       font-display: swap;
+}
+
+@font-face {
+  font-family: 'lato-Bold', sans-serif;
+  src: local('lato-Bold'),
+       url('../fonts/lato-Bold.woff2') format('woff2'),
+       url('../fonts/lato-Bold.woff') format('woff');
+       font-weight: 700;
+       font-style: normal;
+       font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato-Black', sans-serif;
+  src: local('Lato-Black'),
+       url('../fonts/Lato-Black.woff2') format('woff2'),
+       url('../fonts/Lato-Black.woff') format('woff');
+       font-weight: 900;
+       font-style: normal;
+       font-display: swap;
+}
+
+@font-face {
+  font-family: 'Oswald-Light', sans-serif;
+  src: local('Oswald-Light'),
+       url('../fonts/Oswald-Light.woff2') format('woff2'),
+       url('../fonts/Oswald-Light.woff') format('woff');
+       font-weight: 300;
+       font-style: normal;
+       font-display: swap;
+}
+
+@font-face {
+  font-family: 'Courgette-Regular', cursive;
+  src: local('Courgette-Regular'),
+       url('../fonts/Courgette-Regular.woff2') format('woff2'),
+       url('../fonts/Courgette-Regular.woff') format('woff');
+       font-weight: 400;
+       font-style: normal;
+       font-display: swap;
+}
