@@ -4,8 +4,120 @@
 @import 'global';
 
 
+.header {
+  padding: 43px 0 37px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__menu-dropdown {
+    display: flex;
+  }
+}
+
+.header-dropdown {
+  position: relative;
+  display: inline-block;  
+
+  &__link {
+    padding-right: 15px;
+    color: $title;
+    font-size: 20px;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $accent;
+    }
+  }
+
+  &__link::before {
+    position: absolute;
+    content: '';
+    background-image: url('../images/icons/corner.png');
+    width: 7px;
+    height: 4px;
+    top: 9px;
+    right: 0;
+  }
+
+  &__link:hover:before {
+    color: $accent;
+  }  
+
+  &__content {
+    position: absolute;
+    display: none;
+    z-index: 1;
+  }
+
+  &__content-link {
+    display: block;
+    color: $title;
+    font-size: 16px;
+    text-decoration: none;      
+  }
+
+  &__content-link:hover {
+    color: #e3673d;
+  }
+}
+
+.header-dropdown:hover .header-dropdown__content {
+  display: block;
+}
+
+.header-dropdown:hover .header-dropdown__link {
+  color: $accent;
+}
+
+.header-dropdown+.header-dropdown {
+  margin-left: 30px;
+}
+
+.header-user-nav {
+  display: flex;
+  position: relative;
+
+  &__link {
+    margin-left: 25px;
+    transition: color 0.3s;
+  }
+
+  &__link:hover path {
+    fill: $accent;
+  }
+
+  &__num--heart,
+  &__num--cart {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: $accent;
+    top: -15px;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 22px;
+  }
+
+  &__num--heart {
+    right: 33px;
+  }
+
+  &__num--cart {
+    right: -12px;
+  }
+}
+
+
+
+
+
+
 
 
 @import 'media';
-
-  
