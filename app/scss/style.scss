@@ -226,7 +226,7 @@
 
 .notice {
   padding: 13px 0;
-  background-color: #fdba6d4f;
+  background-color: $bg;
 
   &__box {
     display: flex;
@@ -490,16 +490,83 @@
   }
 }
 
+.about {
+  padding: 30px 0;
 
+  &__title {
+    margin-bottom: 20px;
+    color: #4fafa0;
+  }
 
+  &__text {
+    font-size: 18px;
+    color: $accent;
+  }
+}
 
+.video {
+  background-color: $bg;
+  display: flex;
+  align-items: center;
 
+  &__popup {
+    max-width: 800px;
+    width: 100%;
+    height: 500px;
+  }
+
+  &__popup-link {
+    position: relative;
+  }
+
+  &__popup-link::before {
+    position: absolute;
+    content: '';
+    background-image: url('../images/icons/play.svg');
+    width: 60px;
+    height: 60px;
+    top: 230px;
+    left: 380px;
+    z-index: 1;
+  }
+
+  &__popup-img {
+    width: 800px;
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+}
+
+.brands {
+  padding: 20px 0;
+  border-bottom: 5px solid $accent;
+  border-top: 5px solid $accent;
+
+  &__title {
+    @extend %lato-700;
+    color: $title;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #4fafa0;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 
 
 
 .accept {
   padding: 18px 0;
-  background-color: #fdba6d4f;
+  background-color: $bg;
 
   &__list {
     display: flex;

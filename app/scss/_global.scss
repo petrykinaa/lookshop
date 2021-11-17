@@ -1,6 +1,7 @@
 html,
 body {
   height: 100%;
+  position: relative;
 }
 
 
@@ -29,4 +30,18 @@ a {
   &:hover {
     color: $accent;
   }
+}
+
+.title {
+  @extend %lato-700;
+  color: $title;
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.text {
+  @extend %lato-400;
+  font-size: 14px;
+  text-align: center;
 }

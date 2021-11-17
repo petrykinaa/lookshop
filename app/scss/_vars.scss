@@ -1,6 +1,7 @@
 $accent: #fd926d;
 $default: #544f4d;
 $title: #414141;
+$bg: #fdba6d4f;
 
 
 
@@ -36,4 +37,12 @@ $title: #414141;
 
 %btn {
   
+}
+
+
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
 }
