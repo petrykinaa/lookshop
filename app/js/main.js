@@ -1,13 +1,14 @@
-$(function(){
- 
-$('.slider__list').slick({
+$(function () {
 
-  arrows: false,
-  dots: true,
-  fade: true,
-  // autoplay: true,
-  // autoplaySpead: 2000
+  $('.slider__list').slick({
 
-});
+    arrows: false,
+    dots: true,
+    fade: true,
+    // autoplay: true,
+    // autoplaySpead: 2000
 
+  });
+
+  
 });
