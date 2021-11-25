@@ -682,7 +682,7 @@
 
 .accept {
   padding: 18px 0;
-  background-color: $bg;
+  background-color: $bc;
 
   &__list {
     display: flex;
@@ -786,7 +786,7 @@
 
 .related {
   padding: 40px 0;
-  background-color: rgba(253, 186, 109, 0.309804);
+  background-color: $bc;
 
   &__subtitle {
     margin-bottom: 40px;
@@ -800,7 +800,7 @@
 
 .product-page {
   padding: 50px 0;
-  background-color: rgba(253, 186, 109, 0.309804);
+  background-color: $bc;
 }
 
 .product {
@@ -1020,8 +1020,19 @@
   }
 }
 
+.product-social {
+ padding-bottom: 40px;
+  background-color: $bc;
+  
 
-
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid $accent;
+    border-bottom: 1px solid $accent;
+    padding: 20px 0;     
+  }    
+}
 
 
 
