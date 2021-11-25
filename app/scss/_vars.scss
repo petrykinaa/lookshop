@@ -11,8 +11,8 @@ $bg: #fdba6d4f;
 }
 
 %lato-italic {
-   font-family: 'Lato-Italic', sans-serif;
-   font-weight: 400;
+  font-family: 'Lato-Italic', sans-serif;
+  font-weight: 400;
 }
 
 %lato-700 {
@@ -26,8 +26,8 @@ $bg: #fdba6d4f;
 }
 
 %oswald-300 {
-   font-family: 'Oswald-Light', sans-serif;
-   font-weight: 300;
+  font-family: 'Oswald-Light', sans-serif;
+  font-weight: 300;
 }
 
 %courgette-400 {
@@ -36,13 +36,56 @@ $bg: #fdba6d4f;
 }
 
 %btn {
-  
+  padding: 12px 30px 12px 10px;
+  font-size: 16px;
+  width: 160px;
+  height: 50px;
+  text-align: center;
+  color: #ffffff;
+  background-color: $accent;
+  text-transform: uppercase;
+  position: relative;
+  transition: color 0.3s;
+  display: inline-block;
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    content: '';
+    background-image: url('../images/icons/plus.png');
+    width: 11px;
+    height: 11px;
+    top: 20px;
+    right: 17px;
+  }
+
+  &:hover {
+    color: $title;
+  }
 }
+
+%checkbox-hidden,
+%radio-hidden {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+}
+
+
+
 
 
 @function max($numbers...) {
   @return m#{a}x(#{$numbers});
 }
+
 @function min($numbers...) {
   @return m#{i}n(#{$numbers});
 }
