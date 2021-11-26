@@ -682,7 +682,7 @@
 
 .accept {
   padding: 18px 0;
-  background-color: $bc;
+  background-color: $bg;
 
   &__list {
     display: flex;
@@ -786,7 +786,7 @@
 
 .related {
   padding: 40px 0;
-  background-color: $bc;
+  background-color: $bg;
 
   &__subtitle {
     margin-bottom: 40px;
@@ -800,7 +800,7 @@
 
 .product-page {
   padding: 50px 0;
-  background-color: $bc;
+  background-color: $bg;
 }
 
 .product {
@@ -1021,18 +1021,78 @@
 }
 
 .product-social {
- padding-bottom: 40px;
-  background-color: $bc;
-  
+  padding-bottom: 40px;
+  background-color: $bg;
+
 
   &__list {
     display: flex;
     justify-content: space-around;
     border-top: 1px solid $accent;
     border-bottom: 1px solid $accent;
-    padding: 20px 0;     
-  }    
+    padding: 20px 0;
+  }
 }
+
+
+.accordion {
+  background-color: $bg;
+}
+  .tab input,
+  .tab-content {
+    display: none;
+  }
+
+  .tab {
+    @extend %lato-700;
+    color: $title;    
+    border: 1px solid #0ab1b9;    
+    margin-bottom: 10px;   
+  }
+
+  .tab:last-child {
+    margin-bottom: 0;
+  }
+
+  .tab-title {
+    padding: 10px;    
+    display: block;    
+    text-transform: uppercase;   
+    cursor: pointer;   
+  }
+
+  .tab-title::after {
+    content: '+';    
+    float: right;    
+  }
+
+  .tab-content {
+    padding: 10px 20px;    
+    @extend %lato-400;
+    color: $default;
+    font-size: 14px;
+  }
+
+  .tab-content__list {
+    
+  }
+
+  .tab :checked+.tab-title {
+    background-color: #0ab1b9;    
+    color: #fff;    
+  }
+
+  .tab :checked+.tab-title::after {
+    content: '−';    
+  }
+
+  .tab :checked~.tab-content {
+    display: block;    
+  }
+
+
+
+
 
 
 
