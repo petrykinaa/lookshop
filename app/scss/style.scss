@@ -1034,62 +1034,135 @@
   }
 }
 
-
 .accordion {
   background-color: $bg;
 }
-  .tab input,
-  .tab-content {
-    display: none;
+
+.tab input,
+.tab-content {
+  display: none;
+}
+
+.tab {
+  @extend %lato-700;
+  color: $title;
+  border: 1px solid #0ab1b9;
+  margin-bottom: 10px;
+}
+
+.tab:last-child {
+  margin-bottom: 0;
+}
+
+.tab-title {
+  padding: 10px;
+  display: block;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.tab-title::after {
+  content: '+';
+  float: right;
+}
+
+.tab-content {
+  padding: 10px 20px;
+  @extend %lato-400;
+  color: $default;
+  font-size: 14px;
+}
+
+.tab :checked+.tab-title {
+  background-color: #0ab1b9;
+  color: #fff;
+}
+
+.tab :checked+.tab-title::after {
+  content: '−';
+}
+
+.tab :checked~.tab-content {
+  display: block;
+}
+
+.shop-slider {
+  padding-top: 20px;
+  margin-bottom: 50px;
+
+  &__inner {
+    width: 900px;
+    height: 400px;
+    margin: 0 auto;
   }
 
-  .tab {
+  &__box {
+    display: flex;
+  }
+
+  &__img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+  }
+
+  &__content {
+    width: 380px;
+    margin-left: 30px;
+    padding-top: 20px;
+  }
+
+  &__subtitle {
+    margin-bottom: 20px;
+    max-width: 180px;
+    text-transform: none;
+    text-align: start;
+  }
+
+  &__span {
     @extend %lato-700;
-    color: $title;    
-    border: 1px solid #0ab1b9;    
-    margin-bottom: 10px;   
+    color: $accent;
+    font-size: 36px;
   }
 
-  .tab:last-child {
-    margin-bottom: 0;
+  &__text {
+    margin: 30px 0;
+    max-width: 320px;
+    text-align: start;
   }
 
-  .tab-title {
-    padding: 10px;    
-    display: block;    
-    text-transform: uppercase;   
-    cursor: pointer;   
+  &__link {
+    @extend %btn;
+    padding: 14px 30px 12px 10px;
   }
 
-  .tab-title::after {
-    content: '+';    
-    float: right;    
-  }
+  .slick-dots {
+    display: flex;
+    justify-content: center;
 
-  .tab-content {
-    padding: 10px 20px;    
-    @extend %lato-400;
-    color: $default;
-    font-size: 14px;
-  }
+    li {
+      margin: 0 20px;
 
-  .tab-content__list {
-    
-  }
+      button {
+        padding: 0;
+        font-size: 0;
+        border: none;
+        background-color: transparent;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #867a76;
+        cursor: pointer;
+      }
 
-  .tab :checked+.tab-title {
-    background-color: #0ab1b9;    
-    color: #fff;    
+      &.slick-active {
+        button {
+          background-color: $accent;
+        }
+      }
+    }
   }
-
-  .tab :checked+.tab-title::after {
-    content: '−';    
-  }
-
-  .tab :checked~.tab-content {
-    display: block;    
-  }
-
+}
 
 
 

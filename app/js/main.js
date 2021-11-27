@@ -1,4 +1,13 @@
 $(function () {
+
+
+  $('.shop-slider__inner').slick({
+
+  dots: true,
+  fade: true,
+  arrows: false
+
+  });
  
 
   $('.product__num').styler();
