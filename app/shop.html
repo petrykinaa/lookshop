@@ -182,6 +182,7 @@
 
     <section class="shop-slider">
       <div class="container">
+
         <ul class="shop-slider__inner">
           <li class="shop-slider__item">
             <div class="shop-slider__box">
@@ -190,7 +191,7 @@
                 <h2 class="subtitle shop-slider__subtitle">
                   Open Top
                 </h2>
-                <span class="shop-slider__span">
+                <span class="shop-slider__price">
                   $13.95
                 </span>
                 <div class="text shop-slider__text">
@@ -213,7 +214,7 @@
                 <h2 class="subtitle shop-slider__subtitle">
                   Open Top
                 </h2>
-                <span class="shop-slider__span">
+                <span class="shop-slider__price">
                   $13.95
                 </span>
                 <div class="text shop-slider__text">
@@ -236,7 +237,7 @@
                 <h2 class="subtitle shop-slider__subtitle">
                   Open Top
                 </h2>
-                <span class="shop-slider__span">
+                <span class="shop-slider__price">
                   $13.95
                 </span>
                 <div class="text shop-slider__text">
@@ -259,7 +260,7 @@
                 <h2 class="subtitle shop-slider__subtitle">
                   Open Top
                 </h2>
-                <span class="shop-slider__span">
+                <span class="shop-slider__price">
                   $13.95
                 </span>
                 <div class="text shop-slider__text">
@@ -282,7 +283,7 @@
                 <h2 class="subtitle shop-slider__subtitle">
                   Open Top
                 </h2>
-                <span class="shop-slider__span">
+                <span class="shop-slider__price">
                   $13.95
                 </span>
                 <div class="text shop-slider__text">
@@ -301,6 +302,163 @@
         </ul>
       </div>
     </section>
+
+    <section class="catalog">
+      <div class="container">
+        <div class="catalog__inner">
+          <div class="catalog__content"></div>
+          <div class="catalog__aside">
+
+            <section class="catalog__categories">
+              <h3 class=" catalog__categories-title">
+                Categories
+              </h3>
+              <div class="tab">
+                <input type="checkbox" id="tab1" name="tab-group">
+                <label for="tab1" class="tab-title">New</label>
+                <section class="tab-content">
+                  <ul class="tab-content__list">
+                    <li class="tab-content__item">
+                      <a class="tab-content__link" href="#">Product</a>
+                    </li>
+                    <li class="tab-content__item">
+                      <a class="tab-content__link" href="#">Product</a>
+                    </li>
+                    <li class="tab-content__item">
+                      <a class="tab-content__link" href="#">Product</a>
+                    </li>
+                  </ul>
+                </section>
+              </div>
+              <div class="tab">
+                <input type="checkbox" id="tab2" name="tab-group">
+                <label for="tab2" class="tab-title">Designers</label>
+                <section class="tab-content">
+                  <ul class="tab-content__list">
+                    <li class="tab-content__item">
+                      <a class="tab-content__link" href="#">Product</a>
+                    </li>
+                    <li class="tab-content__item">
+                      <a class="tab-content__link" href="#">Product</a>
+                    </li>
+                    <li class="tab-content__item">
+                      <a class="tab-content__link" href="#">Product</a>
+                    </li>
+                  </ul>
+                </section>
+              </div>
+              <div class="tab">
+                <input type="checkbox" id="tab3" name="tab-group">
+                <label for="tab3" class="tab-title">Women</label>
+                <section class="tab-content">
+                  <ul class="tab-content__list">
+                    <li class="tab-content__item">
+                      <a class="tab-content__link" href="#">Product</a>
+                    </li>
+                    <li class="tab-content__item">
+                      <a class="tab-content__link" href="#">Product</a>
+                    </li>
+                    <li class="tab-content__item">
+                      <a class="tab-content__link" href="#">Product</a>
+                    </li>
+                  </ul>
+                </section>
+              </div>
+              <div class="tab">
+                <input type="checkbox" id="tab4" name="tab-group">
+                <label for="tab4" class="tab-title">Men</label>
+                <section class="tab-content">
+                  <ul class="tab-content__list">
+                    <li class="tab-content__item">
+                      <a class="tab-content__link" href="#">Product</a>
+                    </li>
+                    <li class="tab-content__item">
+                      <a class="tab-content__link" href="#">Product</a>
+                    </li>
+                    <li class="tab-content__item">
+                      <a class="tab-content__link" href="#">Product</a>
+                    </li>
+                  </ul>
+                </section>
+              </div>
+              <div class="tab">
+                <input type="checkbox" id="tab5" name="tab-group">
+                <label for="tab5" class="tab-title">Clearanse</label>
+                <section class="tab-content">
+                  <ul class="tab-content__list">
+                    <li class="tab-content__item">
+                      <a class="tab-content__link" href="#">Product</a>
+                    </li>
+                    <li class="tab-content__item">
+                      <a class="tab-content__link" href="#">Product</a>
+                    </li>
+                    <li class="tab-content__item">
+                      <a class="tab-content__link" href="#">Product</a>
+                    </li>
+                  </ul>
+                </section>
+              </div>
+            </section>
+
+
+            <section class="catalog-price">
+              <form class="catalog-price__form" action="#">
+                <input class="catalog-price__input" type="text" data-min="0" data-max="200" data-from="20" data-to="180">
+              </form>
+              <label class="catalog-price__label">
+                <span class="catalog-price__list">
+                  Price
+                  $<span class="catalog-price__from"></span> - 
+                  $<span class="catalog-price__to"></span> 
+                </span>
+                <button class="catalog-price__btn" type="submit">Filter</button>
+              </label>
+            </section>
+
+
+
+            <section class="catalog-size">
+              <h3 class="catalog-size__title">
+                Select your size
+              </h3>
+              <form class=" catalog__size-filter catalog-filter" action="#">
+                <div class="catalog-filter__size">
+                  <label class="catalog-filter__size-label">
+                    <input class="catalog-filter__size-input" type="radio" name="size" checked>
+                    <span class="catalog-filter__size-checkbox">XS</span>
+                  </label>
+                  <label class="catalog-filter__size-label">
+                    <input class="catalog-filter__size-input" type="radio" name="size">
+                    <span class="catalog-filter__size-checkbox">S</span>
+                  </label>
+                  <label class="catalog-filter__size-label">
+                    <input class="catalog-filter__size-input" type="radio" name="size">
+                    <span class="catalog-filter__size-checkbox">M</span>
+                  </label>
+                  <label class="catalog-filter__size-label">
+                    <input class="catalog-filter__size-input" type="radio" name="size">
+                    <span class="catalog-filter__size-checkbox">L</span>
+                  </label>
+                  <label class="catalog-filter__size-label">
+                    <input class="catalog-filter__size-input" type="radio" name="size">
+                    <span class="catalog-filter__size-checkbox">XL</span>
+                  </label>
+                </div>
+              </form>
+
+            </section>
+
+
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
 
     <div class="accept">
       <div class="container">
