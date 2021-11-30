@@ -1180,10 +1180,14 @@
 
   &__content {
     width: 720px;
+  }  
+  
+  .cart {    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    padding: 30px 0;
   }
-
-
-
 
   &__aside {
     width: 230px;
@@ -1196,11 +1200,19 @@
   &__categories-title {
     width: 230px;
     padding: 10px;
+    margin-bottom: 10px;
     @extend %lato-400;
-    font-size: 14px;
-    color: #ffffff;
+    font-size: 14px;    
     background-color: $accent;
     text-transform: uppercase;
+  }
+
+  &__categories-link {
+    color: #ffffff;
+  }
+
+  &__categories-link:hover {
+    color: $title;
   }
 
   .tab {
@@ -1241,7 +1253,6 @@
   }
 }
 
-
 .catalog-price {
   margin-bottom: 30px;
 
@@ -1277,14 +1288,14 @@
   .irs--flat .irs-line {
     top: 14px;
     height: 5px;
-    background-color: $bg;    
+    background-color: $bg;
   }
 
   .irs--flat .irs-handle {
     top: 10px;
     width: 13px;
     height: 13px;
-    border-radius: 50%;    
+    border-radius: 50%;
     background-color: $accent;
   }
 
@@ -1298,22 +1309,21 @@
     background-color: $accent;
   }
 
-   .irs-from, .irs-to, .irs-single {
+  .irs-from,
+  .irs-to,
+  .irs-single {
     display: none;
   }
 
   .irs--flat .irs-min,
   .irs--flat .irs-max {
-   display: none;
+    display: none;
   }
 
   .irs--flat {
     height: 30px;
-  } 
+  }
 }
-
-
-
 
 .catalog-size {
   &__title {
@@ -1351,6 +1361,80 @@
     display: inline-block;
   }
 }
+
+.catalog-sale {
+  margin-bottom: 30px;
+}
+
+.catalog-sale,
+.catalog-featured {
+
+  &__title {
+    width: 230px;
+    padding: 10px;
+    margin-bottom: 10px;
+    @extend %lato-400;
+    font-size: 14px;
+    background-color: $accent;
+    text-transform: uppercase;
+  }
+
+  &__title-link {
+    color: #ffffff;
+  }
+
+  &__title-link:hover {
+    color: $title;
+  }
+
+  &__item {
+    display: flex;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid $accent;
+  }
+
+  &__img {
+    width: 70px;
+    height: 101px;
+    object-fit: cover;
+  }
+
+  &__img:hover {
+    transform: scale(1.1);  
+    overflow: hidden;  
+  }
+
+  &__info {
+    margin-left: 10px;
+  }
+
+  &__name {
+    margin-bottom: 10px;
+    @extend %lato-400;
+    font-size: 14px;
+    color: $title;
+    text-transform: uppercase;
+  }
+
+  &__link-name:hover {
+    color: #0ab1b9;
+  }
+
+  &__price {
+    @extend %lato-700;
+    font-size: 14px;
+    color: $accent;
+  }
+
+}
+
+
+
+
+
+
+
 
 
 
