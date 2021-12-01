@@ -19,7 +19,7 @@ $(function () {
     arrows: false
   });
 
-  $('.product__num').styler();
+  $('.product__num, .catalog-filter__selects-sort').styler();
 
   $('.product-slide__thumb').slick({
     asNavFor: '.product-slide__big',

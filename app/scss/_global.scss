@@ -94,3 +94,58 @@ a {
     color: inherit;
   }
 }
+
+.pagination {
+  display: flex;  
+
+  &__info {
+    margin-right: 20px;
+    font-size: 14px;
+    color: $title;
+    padding-top: 7px;
+  }
+
+  &__list {
+    display: flex;
+    text-align: center;    
+  }
+
+  &__item {
+    margin-right: 7px;
+    width: 32px;
+    height: 32px;
+    background-color: rgba(253, 186, 109, 0.309804);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__link {
+    font-size: 14px;
+    color: $title;
+    &:hover {
+      color: $accent;
+    }
+  }
+
+  &__link--active {    
+    color: #0ab1b9;    
+  }
+
+  &__next {
+    width: 32px;
+    height: 32px;
+    background-color: rgba(253, 186, 109, 0.309804);
+    position: relative;
+    &::before {
+      position: absolute;
+      content: '';
+      background-image: url('../images/icons/angle-rightwhite.svg');
+      width: 7px;
+      height: 14px;
+      top: 10px;
+      left: 13px;      
+    }
+  }
+}
+
