@@ -672,7 +672,7 @@
       width: 50px;
       height: 25px;
       color: #ffffff;
-      background-color: $accent;
+      background-color: #0ab1b9;      
       top: 5px;
       left: 5px;
       padding: 4px;
@@ -1093,7 +1093,7 @@
   &__inner {
     width: 970px;
     height: 400px;
-    margin: 0 auto;    
+    margin: 0 auto;
   }
 
   &__box {
@@ -1181,63 +1181,10 @@
   .catalog-filter {
     padding: 0 0 30px 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    border-bottom: 1px solid $accent;
-
-    &__selects {
-      display: flex;
-      align-items: center;
-    }
-
-    &__selects-name {
-      margin-right: 10px;
-      font-size: 14px;
-      color: $title;
-    }
+    border-bottom: 1px solid $accent;  
   }
-
-  .jq-selectbox__select {
-    width: 110px;
-    height: 32px;
-    padding: 0 40px 0 0;
-    border: none;
-    background: transparent;
-    box-shadow: none;
-    @extend %lato-400;
-    font-size: 14px;
-    color: $title;
-    text-shadow: none;
-
-    &:hover {
-      background: transparent;
-    }
-  }
-
-  .jq-selectbox__select-text {
-    background-color: rgba(253, 186, 109, 0.309804);
-    padding: 0 10px;
-  }
-
-  .jq-selectbox__trigger {
-    background-color: $accent;
-    right: 5px;
-  }
-
-  .jq-selectbox__trigger {
-    border-left: none;
-  }
-
-  .jq-selectbox__trigger-arrow {
-    position: absolute;
-    top: 11px;
-    right: 12px;
-    width: 7px;
-    height: 11px;
-    border: none;
-    background-image: url('../images/icons/angle-down.svg');   
-    
-  }  
 
   .cart {
     display: grid;
@@ -1486,11 +1433,15 @@
   }
 }
 
-.pagination {
+.pagination { 
   &__bottom {
-    justify-content: end;
-  }
+    justify-content: center;  
+  } 
 }
+
+
+
+
 
 
 
