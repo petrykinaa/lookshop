@@ -303,8 +303,7 @@
 }
 
 .offer {
-  padding: 40px 0 50px;
-  background-color: rgba(253, 186, 109, 0.309804);
+  padding: 40px 0 50px;  
 
   &__title {
     margin-bottom: 30px;
@@ -495,9 +494,11 @@
   }
 }
 
+
+
+
 .about {
-  padding: 30px 0;
-  background-color: $bg;
+  padding: 30px 0;  
 
   &__subtitle {
     margin-bottom: 20px;
@@ -508,8 +509,7 @@
   }
 }
 
-.video {
-  background-color: $bg;
+.video { 
   display: flex;
   align-items: center;
 
@@ -554,10 +554,6 @@
     justify-content: space-between;
     align-items: center;
   }
-}
-
-.info {
-  background-color: rgba(253, 186, 109, 0.309804);
 }
 
 .cart {
@@ -785,8 +781,7 @@
 }
 
 .related {
-  padding: 40px 0;
-  background-color: $bg;
+  padding: 40px 0;  
 
   &__subtitle {
     margin-bottom: 40px;
@@ -799,8 +794,7 @@
 }
 
 .product-page {
-  padding: 50px 0;
-  background-color: $bg;
+  padding: 50px 0;  
 }
 
 .product {
@@ -1022,8 +1016,6 @@
 
 .product-social {
   padding-bottom: 40px;
-  background-color: $bg;
-
 
   &__list {
     display: flex;
@@ -1034,9 +1026,6 @@
   }
 }
 
-.accordion {
-  background-color: $bg;
-}
 
 .tab input,
 .tab-content {
