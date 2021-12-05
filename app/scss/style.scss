@@ -115,12 +115,10 @@
 }
 
 .slider {
-  min-width: 970px;
+  max-width: 970px;
   height: 440px;
+  margin: 0 auto;
   margin-bottom: 70px;
-  background-image: url('../images/slider/sliderfon.png');
-  background-repeat: no-repeat;
-  background-size: cover;
 
   &__item {
     position: relative;
@@ -168,7 +166,7 @@
     color: #ffffff;
     text-transform: uppercase;
     text-align: center;
-    padding: 20px 45px 20px 20px;
+    padding: 15px 45px 15px 20px;
     position: relative;
     transition: color 0.3s;
   }
@@ -183,7 +181,7 @@
     background-image: url('../images/icons/corner-right.png');
     width: 4px;
     height: 7px;
-    top: 27px;
+    top: 22px;
     right: 23px;
   }
 
@@ -226,12 +224,14 @@
 
 .notice {
   padding: 13px 0;
-  background-color: $bg;
 
   &__box {
+    padding: 10px 0;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
+    border-bottom: 1px solid $accent;
+    border-top: 1px solid $accent;
   }
 
   &__mail {
@@ -250,14 +250,14 @@
 
   &__mail-input {
     width: 160px;
-    height: 30px;
-    border: none;
+    height: 30px;    
     padding: 10px;
+    border: 1px solid $accent;
 
     &::placeholder {
       @extend %lato-italic;
       font-size: 14px;
-      color: $title;
+      color: #0ab1b9;
     }
   }
 
@@ -303,7 +303,7 @@
 }
 
 .offer {
-  padding: 40px 0 50px;  
+  padding: 40px 0 50px;
 
   &__title {
     margin-bottom: 30px;
@@ -498,7 +498,7 @@
 
 
 .about {
-  padding: 30px 0;  
+  padding: 30px 0;
 
   &__subtitle {
     margin-bottom: 20px;
@@ -509,7 +509,7 @@
   }
 }
 
-.video { 
+.video {
   display: flex;
   align-items: center;
 
@@ -545,14 +545,15 @@
 }
 
 .brands {
-  padding: 20px 0;
-  border-bottom: 1px solid $accent;
-  border-top: 1px solid $accent;
+  padding: 50px 0 20px;
 
   &__list {
+    padding: 15px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid $accent;
+    border-top: 1px solid $accent;
   }
 }
 
@@ -781,7 +782,7 @@
 }
 
 .related {
-  padding: 40px 0;  
+  padding: 40px 0;
 
   &__subtitle {
     margin-bottom: 40px;
@@ -794,7 +795,7 @@
 }
 
 .product-page {
-  padding: 50px 0;  
+  padding: 50px 0;
 }
 
 .product {
